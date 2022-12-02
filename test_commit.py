@@ -1,6 +1,11 @@
 import os
 import git
 
-my_repo = git.Repo('/Users/jamie/Desktop/BASE/dev/automit')
-if my_repo.is_dirty(untracked_files=True):
-    print('Changes detected.')
+
+
+repo = git.Repo('/Users/jamie/Desktop/BASE/dev/automit/')
+
+# Provide a list of the files to stage
+repo.index.add(['test_commit.py'])
+# Provide a commit message
+repo.index.commit('testing auto commit.')
