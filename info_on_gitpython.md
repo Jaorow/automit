@@ -54,3 +54,12 @@ print('Remotes:')
 for remote in repo.remotes:
     print(f'- {remote.name} {remote.url}')
 ```
+
+pull from a remote
+```python
+print(repo.remotes.origin.pull())
+```
+push to a remote
+```python
+print(repo.remotes.origin.push())
+```
