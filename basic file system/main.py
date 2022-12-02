@@ -2,11 +2,10 @@ from datetime import datetime
 import random as r
 
 
-
 def main():
     loops = 5
-    f = open("commits.txt","r")
     fw = open("commits.txt","a")
+    f = open("commits.txt","r")
     contents = f.read().splitlines()
 
     if len(contents) > 1 and check_last(contents[-1].split()):
