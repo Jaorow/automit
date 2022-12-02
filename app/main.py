@@ -7,8 +7,8 @@ app = Flask(__name__)
 def home_view():
     return render_template("home.html")
 
-@app.route("/run")
+@app.route("/")
 def run():
-    s.automit()
+    # s.automit()
     print("commited")
     return render_template("home.html")
