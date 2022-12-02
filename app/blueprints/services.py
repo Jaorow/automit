@@ -1,0 +1,1 @@
+"""use for all services!"""
