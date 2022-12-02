@@ -16,4 +16,5 @@ def root():
 
 @app_blueprint.route('/')
 def pg2():
+    services.automit()
     return render_template("home.html")
